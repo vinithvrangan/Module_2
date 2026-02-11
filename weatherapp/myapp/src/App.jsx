@@ -7,7 +7,7 @@ export default function App() {
   const getWeather = () => {
     if (!city) return;
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b386f19df433fa4ebc86a9dd4c3e44fa&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=api_key&units=metric`)
       .then(res => res.json())
       .then(data => setWeather(data));
   };
